@@ -131,7 +131,7 @@ export default function Footer() {
                 Submit
               </h3>
               <a
-                href="https://filmfreeway.com"
+                href="https://filmfreeway.com/UncolonialFilmFestival?utm_campaign=Uncolonial+Film+Festival&utm_medium=External&utm_source=Submission+Button"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-brand-yellow text-black text-xs font-black uppercase tracking-widest px-4 py-2 hover:bg-brand-magenta hover:text-white transition-all duration-150"

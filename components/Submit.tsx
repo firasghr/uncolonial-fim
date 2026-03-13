@@ -110,7 +110,7 @@ export default function Submit() {
               </p>
 
               <a
-                href="https://filmfreeway.com"
+                href="https://filmfreeway.com/UncolonialFilmFestival?utm_campaign=Uncolonial+Film+Festival&utm_medium=External&utm_source=Submission+Button"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-brand-yellow text-black font-black uppercase tracking-widest text-sm px-8 py-4 text-center hover:bg-brand-magenta hover:text-white transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow"
