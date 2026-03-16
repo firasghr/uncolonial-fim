@@ -50,7 +50,7 @@ export default function Navbar() {
           onClick={() => handleNavClick("HOME")}
         >
           <Image
-            src="/images/logo.png"
+            src="/images/home-page-icon.png"
             alt="UN•COLONIAL FILM FESTIVAL logo"
             width={40}
             height={40}

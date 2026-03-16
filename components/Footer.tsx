@@ -39,12 +39,12 @@ export default function Footer() {
     >
       {/* Main footer content */}
       <div className="max-w-screen-xl mx-auto px-4 md:px-8 py-16 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8">
           {/* Brand column */}
           <div className="flex flex-col gap-6">
             <div className="flex items-center gap-3">
               <Image
-                src="/images/logo.png"
+                src="/images/home-page-icon.png"
                 alt="UN•COLONIAL FILM FESTIVAL"
                 width={48}
                 height={48}
@@ -64,44 +64,7 @@ export default function Footer() {
               Space claimed, not borrowed.
             </p>
             <p className="text-brand-grey text-xs">Münster, Germany · August 2026</p>
-
-            <address className="not-italic flex flex-col gap-1 text-sm text-brand-grey">
-              <span className="text-brand-offwhite font-bold text-xs uppercase tracking-widest mb-1">Address</span>
-              <span>Uncolonial Film Festival</span>
-              <span>C/O BiPoC Referat</span>
-              <span>AStA Universität Münster</span>
-              <span>Schlossplatz 1 (Room 203)</span>
-              <span>48149 Münster, Germany</span>
-            </address>
           </div>
-
-          {/* Navigation column */}
-          <nav aria-label="Footer navigation">
-            <h3 className="text-brand-offwhite text-xs font-bold uppercase tracking-widest mb-4">
-              Navigate
-            </h3>
-            <ul className="flex flex-col gap-2" role="list">
-              {[
-                { label: "Home", href: "#home" },
-                { label: "About", href: "#about" },
-                { label: "Submit Film", href: "#submit" },
-                { label: "Program", href: "#program" },
-                { label: "Tickets", href: "#tickets" },
-                { label: "Get Involved", href: "#get-involved" },
-                { label: "FAQ", href: "#faq" },
-                { label: "Contact", href: "#contact" },
-              ].map((item) => (
-                <li key={item.label}>
-                  <a
-                    href={item.href}
-                    className="text-brand-grey text-sm hover:text-brand-magenta transition-colors duration-150"
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
 
           {/* Contact column */}
           <div className="flex flex-col gap-6">

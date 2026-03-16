@@ -88,8 +88,8 @@ export default function About() {
           <div className="relative">
             <div className="relative aspect-[3/4] w-full overflow-hidden">
               <Image
-                src="/images/about-img.jpg"
-                alt="Festival community gathering"
+                src="/images/un-colonial-logo-black-1.png"
+                alt="UN•COLONIAL logo in black"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
