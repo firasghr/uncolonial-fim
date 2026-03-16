@@ -116,7 +116,7 @@ export default function Footer() {
                 uncolonialfilmfestival@gmail.com
               </a>
               <p className="text-brand-grey text-sm mt-2">
-                <a href="tel:+4925183222822" className="hover:text-brand-magenta transition-colors duration-150">
+                <a href="tel:+492518322282" className="hover:text-brand-magenta transition-colors duration-150">
                   +49 251 83 22282
                 </a>
               </p>
