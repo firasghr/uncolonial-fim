@@ -21,92 +21,81 @@ export default function Submit() {
               id="submit-heading"
               className="text-4xl md:text-5xl lg:text-6xl font-black uppercase leading-none tracking-tightest text-brand-offwhite"
             >
-              Your film
-              <br />
-              belongs{" "}
-              <span className="text-brand-yellow">here.</span>
+              Submit your film
             </h2>
-
-            <p className="text-brand-grey text-lg leading-relaxed">
-              We accept short films by BiPoC filmmakers worldwide. No
-              submission fee. No compromise on your vision.
-            </p>
 
             <div className="h-px bg-white/20" />
 
-            {/* Criteria */}
-            <ul className="flex flex-col gap-4" role="list" aria-label="Submission criteria">
-              {[
-                {
-                  label: "Who can submit",
-                  value: "BiPoC filmmakers worldwide",
-                  icon: "●",
-                  color: "text-brand-magenta",
-                },
-                {
-                  label: "Submission fee",
-                  value: "Free — always",
-                  icon: "●",
-                  color: "text-brand-yellow",
-                },
-                {
-                  label: "Format",
-                  value: "Short films (under 30 minutes)",
-                  icon: "●",
-                  color: "text-brand-aqua",
-                },
-                {
-                  label: "Deadline",
-                  value: "Late April 2026",
-                  icon: "●",
-                  color: "text-brand-green",
-                },
-                {
-                  label: "Platform",
-                  value: "Via FilmFreeway",
-                  icon: "●",
-                  color: "text-brand-red",
-                },
-              ].map((item) => (
-                <li key={item.label} className="flex items-start gap-4">
-                  <span className={`${item.color} text-xs mt-1.5 shrink-0`} aria-hidden="true">
-                    {item.icon}
-                  </span>
-                  <div>
-                    <span className="text-brand-grey text-xs uppercase tracking-widest block mb-0.5">
-                      {item.label}
-                    </span>
-                    <span className="text-brand-offwhite font-bold">
-                      {item.value}
-                    </span>
-                  </div>
-                </li>
-              ))}
-            </ul>
+            {/* Who can submit */}
+            <div>
+              <h3 className="text-brand-magenta text-sm font-bold uppercase tracking-widest mb-3">
+                Who can submit
+              </h3>
+              <p className="text-brand-grey text-base leading-relaxed">
+                BiPoC filmmakers only. Short films, maximum 30 minutes, completed after 2020. Any form — documentary, experimental, essay, animation, hybrid. All premiere statuses welcome. Any language.
+              </p>
+              <p className="text-brand-grey text-base leading-relaxed mt-3">
+                We especially encourage work from the global majority, occupied territories and communities under siege, self-taught and community-based makers, and emerging filmmakers.
+              </p>
+            </div>
+
+            <div className="h-px bg-white/20" />
+
+            {/* Selection */}
+            <div>
+              <h3 className="text-brand-magenta text-sm font-bold uppercase tracking-widest mb-3">
+                Selection
+              </h3>
+              <p className="text-brand-grey text-base leading-relaxed">
+                A committee of BiPoC filmmakers and cultural practitioners selects films collectively. No hierarchy. Filmmakers notified by early May 2026.
+              </p>
+            </div>
+
+            <div className="h-px bg-white/20" />
+
+            {/* What selected filmmakers receive */}
+            <div>
+              <h3 className="text-brand-magenta text-sm font-bold uppercase tracking-widest mb-3">
+                What selected filmmakers receive
+              </h3>
+              <ul className="flex flex-col gap-2" role="list">
+                {[
+                  "Official Selection laurels",
+                  "Public screening and Q&A platform",
+                  "Recognition in festival materials",
+                  "Connection to a growing network building uncolonial infrastructure",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span className="text-brand-yellow text-xs mt-1.5 shrink-0" aria-hidden="true">●</span>
+                    <span className="text-brand-grey text-base">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-brand-grey text-sm leading-relaxed mt-4 border-l-2 border-white/20 pl-4">
+                We cannot pay screening fees. We will not dress that up. What we offer is dignified presentation, serious engagement with your work, and programming alongside films that share your commitments.
+              </p>
+              <p className="text-brand-grey text-sm mt-3">
+                You retain all rights to your work.
+              </p>
+            </div>
           </div>
 
           {/* Right: CTA card */}
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-start">
             <div className="border border-brand-yellow/40 p-8 md:p-12 flex flex-col gap-6 bg-brand-yellow/5">
               <div>
                 <p className="text-brand-yellow text-xs font-bold uppercase tracking-widest mb-2">
                   Submissions Now Open
                 </p>
                 <h3 className="text-2xl md:text-3xl font-black uppercase text-brand-offwhite leading-tight">
-                  Submit via FilmFreeway
+                  SUBMIT ON FILMFREEWAY
                 </h3>
               </div>
 
               <div className="h-px bg-white/20" />
 
               <p className="text-brand-grey text-base">
-                Submissions are completely free. We believe financial barriers
-                should never stand between a filmmaker and their audience.
-              </p>
-
-              <p className="text-brand-grey text-base">
-                <span className="text-brand-yellow font-bold">Deadline:</span>{" "}
-                Late April 2026
+                No submission fee. Deadline: Late April 2026.
               </p>
 
               <a

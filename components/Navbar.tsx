@@ -10,7 +10,6 @@ const navItems = [
   { label: "SUBMIT FILM", href: "#submit" },
   { label: "PROGRAM", href: "#program" },
   { label: "TICKETS", href: "#tickets" },
-  { label: "PRESS", href: "#press" },
   { label: "GET INVOLVED", href: "#get-involved" },
   { label: "CONTACT", href: "#contact" },
   { label: "FAQ", href: "#faq" },
@@ -35,7 +34,9 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
-        scrolled ? "bg-black border-b border-white/10" : "bg-transparent"
+        scrolled
+          ? "bg-black border-b border-white/10"
+          : "bg-transparent border-b border-transparent"
       }`}
       role="banner"
     >
@@ -51,7 +52,7 @@ export default function Navbar() {
           onClick={() => handleNavClick("HOME")}
         >
           <Image
-            src="/images/logo.png"
+            src="/images/home-page-icon.png"
             alt="UN•COLONIAL FILM FESTIVAL logo"
             width={40}
             height={40}

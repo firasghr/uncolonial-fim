@@ -4,44 +4,38 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "Who can submit a film?",
+    question: "Who can submit films?",
     answer:
-      "BiPoC (Black, Indigenous, and People of Colour) filmmakers worldwide are invited to submit. There are no geographic restrictions — we welcome films from any country.",
+      "Black, Indigenous, and People of Color (BiPoC) filmmakers only. All experience levels, all geographies. We do not accept submissions from white filmmakers.",
   },
   {
-    question: "Is there a submission fee?",
+    question: "Is there a submission fee or screening fee?",
     answer:
-      "No. Submissions are completely free. We believe financial barriers should never stand between a filmmaker and their audience. The festival will remain free to submit to.",
+      "No submission fee. We also don't pay screening fees — this is a grassroots festival with very limited resources.",
   },
   {
-    question: "What formats and lengths are accepted?",
-    answer:
-      "We accept short films under 30 minutes. All genres are welcome — documentary, fiction, experimental, animation. We encourage work that refuses conventional frameworks.",
+    question: "What lengths and formats are accepted?",
+    answer: "Short films only, maximum 30 minutes. Features are not eligible.",
   },
   {
-    question: "When is the submission deadline?",
+    question: "What languages do you accept?",
     answer:
-      "The submission deadline is Late April 2026. We recommend submitting early. All submissions are reviewed by our programming team.",
+      "Any language. English subtitles preferred but not required — contact us if you need translation support. We aim to provide translation for key events as capacity allows.",
   },
   {
-    question: "Where and when is the festival?",
+    question: "Can I attend if I'm not BiPoC?",
     answer:
-      "The UN•COLONIAL FILM FESTIVAL takes place in Münster, Germany in August 2026. Exact dates and venue will be announced in Spring 2026.",
+      "Yes. The festival screenings and events are open to everyone. Tickets support the infrastructure that centers BiPoC cinema.",
   },
   {
-    question: "How are films selected?",
+    question: "Is the venue accessible?",
     answer:
-      "Films are selected by our programming team, which is composed entirely of BiPoC filmmakers, critics, and community members. We prioritise work that confronts colonial frameworks.",
+      "Accessibility is a priority. We'll share detailed venue accessibility information when the location is announced.",
   },
   {
-    question: "Is the festival free to attend?",
+    question: "Do you give awards?",
     answer:
-      "Yes. The festival is free and open to the public. We are funded entirely through donations — no state or corporate influence — so we can keep access barrier-free.",
-  },
-  {
-    question: "Who organises the festival?",
-    answer:
-      "The festival is organised by the BiPoC Referat at the AStA Universität Münster. We are a student-led, community-driven initiative with no institutional agenda.",
+      "No. We don't rank anticolonial work hierarchically. All selected films are equally valued.",
   },
 ];
 
@@ -119,7 +113,7 @@ export default function FAQ() {
                       role="region"
                       aria-labelledby={`faq-question-${idx}`}
                       className={`overflow-hidden transition-all duration-300 ${
-                        isOpen ? "max-h-48 pb-5" : "max-h-0"
+                        isOpen ? "max-h-96 pb-5" : "max-h-0"
                       }`}
                     >
                       <p className="text-brand-grey text-base leading-relaxed">

@@ -11,91 +11,76 @@ export default function About() {
         {/* Section label */}
         <div className="flex items-center gap-4 mb-12">
           <span className="text-brand-magenta text-xs font-bold tracking-[0.3em] uppercase">
-            About the Festival
+            About
           </span>
           <div className="flex-1 h-px bg-white/20" />
         </div>
 
         {/* Two-column layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           {/* Left: text */}
           <div className="flex flex-col gap-8">
             <h2
               id="about-heading"
               className="text-4xl md:text-5xl lg:text-6xl font-black uppercase leading-none tracking-tightest text-brand-offwhite"
             >
-              We center short films by BiPoC filmmakers{" "}
-              <span className="text-brand-magenta">confronting empire.</span>
+              Uncolonial is a position,{" "}
+              <span className="text-brand-magenta">not a theme.</span>
             </h2>
 
             <div className="h-px bg-white/20" />
 
             <p className="text-brand-grey text-lg leading-relaxed">
-              We refuse trauma as spectacle, NGO narratives, representation
-              without power. We build infrastructure.
+              The colonial gaze still controls cinema — which stories get funded, whose aesthetics count as &ldquo;world cinema,&rdquo; who enters the archive. We refuse that structure.
             </p>
 
             <p className="text-brand-grey text-base leading-relaxed">
-              Five days: films, dialogues, performances. A space where BiPoC
-              filmmakers and audiences come together to challenge the systems
-              that limit our stories.
+              We refuse imperial narratives. Extractive storytelling. Institutional gatekeeping. The demand that we make ourselves digestible. Representation without redistribution of power.
             </p>
 
             <div className="h-px bg-white/20" />
 
-            {/* Key facts */}
-            <dl className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-              <div>
-                <dt className="text-brand-magenta text-xs font-bold tracking-widest uppercase mb-1">
-                  Location
-                </dt>
-                <dd className="text-brand-offwhite font-bold text-lg">
-                  Münster, Germany
-                </dd>
-              </div>
-              <div>
-                <dt className="text-brand-magenta text-xs font-bold tracking-widest uppercase mb-1">
-                  Date
-                </dt>
-                <dd className="text-brand-offwhite font-bold text-lg">
-                  August 2026
-                </dd>
-              </div>
-              <div>
-                <dt className="text-brand-magenta text-xs font-bold tracking-widest uppercase mb-1">
-                  Admission
-                </dt>
-                <dd className="text-brand-offwhite font-bold text-lg">Free</dd>
-              </div>
-            </dl>
-
-            <div className="h-px bg-white/20" />
-
-            {/* Submissions info */}
-            <div className="bg-white/5 border border-white/10 p-6">
-              <p className="text-brand-yellow text-sm font-bold uppercase tracking-widest mb-2">
-                Submissions Open
-              </p>
-              <p className="text-brand-grey text-base">
-                Via FilmFreeway · No submission fee · Deadline: Late April 2026
+            {/* Why Münster */}
+            <div>
+              <h3 className="text-brand-yellow text-sm font-bold uppercase tracking-widest mb-3">
+                Why Münster
+              </h3>
+              <p className="text-brand-grey text-base leading-relaxed">
+                Münster is not an innocent backdrop. The city is entangled with German colonial projects that asserted cultural and political supremacy in Africa, Asia and elsewhere, and those histories still shape its streets, institutions and memory. We are claiming space here — not somewhere else, not in more comfortable language.
               </p>
             </div>
 
-            {/* Organiser badge */}
-            <div className="flex items-center gap-4">
-              <div className="w-1 h-12 bg-brand-magenta shrink-0" />
-              <div>
-                <p className="text-brand-grey text-xs uppercase tracking-widest mb-0.5">
-                  Organised by
-                </p>
-                <p className="text-brand-offwhite font-bold">
-                  BiPoC Referat, AStA Universität Münster
-                </p>
-                <p className="text-brand-grey text-sm mt-0.5">
-                  Funded entirely through donations — no state or corporate
-                  influence.
-                </p>
-              </div>
+            <div className="h-px bg-white/20" />
+
+            {/* Who we are */}
+            <div>
+              <h3 className="text-brand-yellow text-sm font-bold uppercase tracking-widest mb-3">
+                Who we are
+              </h3>
+              <p className="text-brand-grey text-base leading-relaxed">
+                The BiPoC Referat is the autonomous Black, Indigenous, and People of Color student department at the University of Münster. We run on voluntary labour and limited resources. We are building anyway because we cannot wait for permission.
+              </p>
+            </div>
+
+            <div className="h-px bg-white/20" />
+
+            {/* Our commitments */}
+            <div>
+              <h3 className="text-brand-yellow text-sm font-bold uppercase tracking-widest mb-4">
+                Our commitments
+              </h3>
+              <ul className="flex flex-col gap-2" role="list">
+                {[
+                  "Transparency.",
+                  "Accessibility: translation, captioning, and childcare built in from the start.",
+                  "Collective process: selection is collaborative, not hierarchical.",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <span className="text-brand-magenta text-xs mt-1.5 shrink-0" aria-hidden="true">●</span>
+                    <span className="text-brand-grey text-base">{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 
@@ -103,10 +88,10 @@ export default function About() {
           <div className="relative">
             <div className="relative aspect-[3/4] w-full overflow-hidden">
               <Image
-                src="/images/about-img.jpg"
-                alt="Festival community gathering"
+                src="/images/un-colonial-logo-black-1.png"
+                alt="UN•COLONIAL logo in black"
                 fill
-                className="object-cover object-center"
+                className="object-contain object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               {/* Magenta border accent */}

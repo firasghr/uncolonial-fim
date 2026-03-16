@@ -45,8 +45,8 @@ export default function Hero() {
         </p>
 
         {/* Statement */}
-        <p className="text-brand-yellow text-lg md:text-2xl font-bold italic tracking-wide">
-          &ldquo;Space claimed, not borrowed.&rdquo;
+        <p className="text-brand-yellow text-lg md:text-2xl font-bold tracking-wide">
+          Space claimed, not borrowed.
         </p>
 
         {/* CTAs */}
@@ -64,6 +64,7 @@ export default function Hero() {
             LEARN MORE
           </a>
         </div>
+
       </div>
 
       {/* Scroll indicator */}

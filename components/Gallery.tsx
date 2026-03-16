@@ -1,12 +1,12 @@
 import Image from "next/image";
 
 const galleryImages = [
-  { src: "/images/gallery-1.jpg", alt: "Festival screening" },
-  { src: "/images/gallery-2.jpg", alt: "Audience at Q&A" },
-  { src: "/images/gallery-3.jpg", alt: "Film still" },
-  { src: "/images/gallery-4.jpg", alt: "Community gathering" },
-  { src: "/images/film-1.jpg", alt: "Film programme" },
-  { src: "/images/film-2.jpg", alt: "Festival atmosphere" },
+  { src: "/images/forweb-1.png", alt: "Festival visual" },
+  { src: "/images/forweb-2.png", alt: "Festival visual" },
+  { src: "/images/forweb-3.png", alt: "Festival visual" },
+  { src: "/images/forweb-4.png", alt: "Festival visual" },
+  { src: "/images/forweb-5.png", alt: "Festival visual" },
+  { src: "/images/forweb-6.png", alt: "Festival visual" },
 ];
 
 export default function Gallery() {
