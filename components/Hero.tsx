@@ -45,8 +45,8 @@ export default function Hero() {
         </p>
 
         {/* Statement */}
-        <p className="text-brand-yellow text-lg md:text-2xl font-bold italic tracking-wide">
-          &ldquo;Space claimed, not borrowed.&rdquo;
+        <p className="text-brand-yellow text-lg md:text-2xl font-bold tracking-wide">
+          Space claimed, not borrowed.
         </p>
 
         {/* CTAs */}
@@ -63,6 +63,34 @@ export default function Hero() {
           >
             LEARN MORE
           </a>
+        </div>
+
+        {/* Description block */}
+        <div className="max-w-2xl text-center flex flex-col gap-3 mt-2">
+          <p className="text-brand-grey text-base md:text-lg leading-relaxed">
+            We center short films by BiPoC filmmakers confronting empire. We refuse trauma as spectacle, NGO narratives, representation without power. We build infrastructure. Five days: films, dialogues, performances.
+          </p>
+          <p className="text-brand-grey text-sm leading-relaxed">
+            Submissions open via FilmFreeway. No submission fee. Deadline: Late April 2026.
+          </p>
+        </div>
+
+        {/* Organiser badge */}
+        <div className="flex flex-col items-center gap-3 mt-2">
+          <p className="text-brand-grey text-xs uppercase tracking-widest">
+            Organised by the BiPoC Referat, AStA Universität Münster.<br className="hidden sm:block" />
+            {" "}Funded entirely through donations — no state or corporate influence.
+          </p>
+          <div className="flex items-center gap-3">
+            <span className="text-brand-grey text-xs uppercase tracking-widest">Organised by</span>
+            <Image
+              src="/images/bipoc-logo.png"
+              alt="Autonomes BiPoC Referat logo"
+              width={80}
+              height={40}
+              className="object-contain"
+            />
+          </div>
         </div>
       </div>
 

@@ -10,7 +10,6 @@ const navItems = [
   { label: "SUBMIT FILM", href: "#submit" },
   { label: "PROGRAM", href: "#program" },
   { label: "TICKETS", href: "#tickets" },
-  { label: "PRESS", href: "#press" },
   { label: "GET INVOLVED", href: "#get-involved" },
   { label: "CONTACT", href: "#contact" },
   { label: "FAQ", href: "#faq" },
