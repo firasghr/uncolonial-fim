@@ -113,7 +113,7 @@ export default function FAQ() {
                       role="region"
                       aria-labelledby={`faq-question-${idx}`}
                       className={`overflow-hidden transition-all duration-300 ${
-                        isOpen ? "max-h-64 pb-5" : "max-h-0"
+                        isOpen ? "max-h-96 pb-5" : "max-h-0"
                       }`}
                     >
                       <p className="text-brand-grey text-base leading-relaxed">
