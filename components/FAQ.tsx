@@ -6,43 +6,21 @@ const faqs = [
   {
     question: "Who can submit films?",
     answer:
-      "Black, Indigenous, and People of Color (BiPoC) filmmakers only. All experience levels, all geographies.",
+      "Black, Indigenous, and People of Color (BiPoC) filmmakers only. All experience levels, all geographies. We do not accept submissions from white filmmakers.",
   },
   {
-    question: "Is there a submission fee?",
-    answer: "No. Never.",
-  },
-  {
-    question: "What's the maximum runtime?",
-    answer: "30 minutes.",
-  },
-  {
-    question: "Will you pay screening fees?",
+    question: "Is there a submission fee or screening fee?",
     answer:
-      "No. We're honest about our constraints — this is a grassroots festival with very limited resources.",
+      "No submission fee. We also don't pay screening fees — this is a grassroots festival with very limited resources.",
   },
   {
-    question: "Can I submit a feature film?",
-    answer: "No. This is a short film festival (maximum 30 minutes).",
+    question: "What lengths and formats are accepted?",
+    answer: "Short films only, maximum 30 minutes. Features are not eligible.",
   },
   {
     question: "What languages do you accept?",
     answer:
-      "Any language. English subtitles preferred but not required — contact us if you need translation support.",
-  },
-  {
-    question: "Do you give awards?",
-    answer:
-      "No. We don't rank anticolonial work hierarchically. All selected films are equally valued.",
-  },
-  {
-    question: "How do I know if my work is \"anticolonial enough\"?",
-    answer:
-      "If you're asking this question sincerely and your work takes a clear position against colonial power structures, submit it. We trust your assessment.",
-  },
-  {
-    question: "I'm a white filmmaker. Can I submit?",
-    answer: "No. This festival is for BiPoC filmmakers only.",
+      "Any language. English subtitles preferred but not required — contact us if you need translation support. We aim to provide translation for key events as capacity allows.",
   },
   {
     question: "Can I attend if I'm not BiPoC?",
@@ -50,14 +28,14 @@ const faqs = [
       "Yes. The festival screenings and events are open to everyone. Tickets support the infrastructure that centers BiPoC cinema.",
   },
   {
-    question: "Will there be English translation?",
-    answer:
-      "We're working on providing translation for key events as capacity allows.",
-  },
-  {
     question: "Is the venue accessible?",
     answer:
       "Accessibility is a priority. We'll share detailed venue accessibility information when the location is announced.",
+  },
+  {
+    question: "Do you give awards?",
+    answer:
+      "No. We don't rank anticolonial work hierarchically. All selected films are equally valued.",
   },
 ];
 
@@ -135,7 +113,7 @@ export default function FAQ() {
                       role="region"
                       aria-labelledby={`faq-question-${idx}`}
                       className={`overflow-hidden transition-all duration-300 ${
-                        isOpen ? "max-h-48 pb-5" : "max-h-0"
+                        isOpen ? "max-h-64 pb-5" : "max-h-0"
                       }`}
                     >
                       <p className="text-brand-grey text-base leading-relaxed">

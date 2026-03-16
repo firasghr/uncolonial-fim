@@ -91,7 +91,7 @@ export default function About() {
                 src="/images/un-colonial-logo-black-1.png"
                 alt="UN•COLONIAL logo in black"
                 fill
-                className="object-cover object-center"
+                className="object-contain object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               {/* Magenta border accent */}
