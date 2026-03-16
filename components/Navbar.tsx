@@ -26,8 +26,30 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleNavClick = (label: string) => {
-    setActiveItem(label);
+  useEffect(() => {
+    const sectionIds = navItems.map((item) => item.href.slice(1));
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            const matched = navItems.find((n) => n.href === `#${id}`);
+            if (matched) setActiveItem(matched.label);
+          }
+        });
+      },
+      { rootMargin: "-50% 0px -50% 0px", threshold: 0 }
+    );
+
+    sectionIds.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  const handleNavClick = () => {
     setMenuOpen(false);
   };
 
@@ -49,7 +71,7 @@ export default function Navbar() {
           href="#home"
           className="flex items-center gap-3 shrink-0"
           aria-label="UN•COLONIAL FILM FESTIVAL – Home"
-          onClick={() => handleNavClick("HOME")}
+          onClick={handleNavClick}
         >
           <Image
             src="/images/home-page-icon.png"
@@ -75,7 +97,7 @@ export default function Navbar() {
                     ? "text-brand-magenta after:absolute after:bottom-0 after:left-3 after:right-3 after:h-0.5 after:bg-brand-magenta"
                     : "text-brand-grey"
                 }`}
-                onClick={() => handleNavClick(item.label)}
+                onClick={handleNavClick}
                 aria-current={activeItem === item.label ? "page" : undefined}
               >
                 {item.label}
@@ -92,7 +114,7 @@ export default function Navbar() {
           <a
             href="#submit"
             className="hidden md:inline-block bg-brand-yellow text-black text-xs font-black uppercase tracking-widest px-4 py-2 hover:bg-brand-magenta hover:text-white transition-colors duration-150"
-            onClick={() => handleNavClick("SUBMIT FILM")}
+            onClick={handleNavClick}
           >
             SUBMIT
           </a>
@@ -133,7 +155,7 @@ export default function Navbar() {
                 className={`block text-sm font-bold tracking-widest uppercase py-3 border-b border-white/10 transition-colors hover:text-brand-magenta ${
                   activeItem === item.label ? "text-brand-magenta" : "text-brand-grey"
                 }`}
-                onClick={() => handleNavClick(item.label)}
+                onClick={handleNavClick}
                 aria-current={activeItem === item.label ? "page" : undefined}
                 tabIndex={menuOpen ? 0 : -1}
               >
@@ -145,7 +167,7 @@ export default function Navbar() {
             <a
               href="#submit"
               className="block text-center bg-brand-yellow text-black text-sm font-black uppercase tracking-widest py-3 hover:bg-brand-magenta hover:text-white transition-colors"
-              onClick={() => handleNavClick("SUBMIT FILM")}
+              onClick={handleNavClick}
               tabIndex={menuOpen ? 0 : -1}
             >
               SUBMIT YOUR FILM
